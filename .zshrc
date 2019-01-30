@@ -10,7 +10,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gallifrey"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,14 +82,7 @@ alias rs="java -jar ~/Programs/RuneLite.jar"
 alias config="code ~/.zshrc"
 alias anem="~/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28"
 alias tms="tmux new-session \; \
-  split-window -v -p 60 \; \
-  split-window -h -p 30 \; \
-  send-keys 'htop' C-m \; \
-  select-pane -t 1 \; \
-  split-window -h -p 66 \; \
   split-window -h \; \
-  send-keys 'tty-clock -c -s' C-m \; \
-  select-pane -t 4 \; \
 "
 alias gc="google-chrome"
 alias op="dolphin ."
