@@ -2,9 +2,10 @@
 export PATH=$HOME/Development/flutter/bin:~/.npm-global/bin:$PATH
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/winston/.oh-my-zsh"
+export ZSH="/home/winston/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -85,8 +86,8 @@ alias tms="tmux new-session \; \
   split-window -h \; \
 "
 alias gc="google-chrome"
-alias op="dolphin ."
 alias "do"="run_in_background"
+alias op="do nautilus ."
 
 run_in_background() {
   eval "$@ &>/dev/null &disown";
