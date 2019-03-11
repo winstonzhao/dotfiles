@@ -88,6 +88,7 @@ alias tms="tmux new-session \; \
 alias gc="google-chrome"
 alias "do"="run_in_background"
 alias op="do nautilus ."
+alias psave="sudo tlp start"
 
 run_in_background() {
   eval "$@ &>/dev/null &disown";
