@@ -5,7 +5,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/winston/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -81,7 +81,7 @@ alias off="xset dpms force off"
 alias android-studio="~/Development/android-studio/bin/studio.sh"
 alias rs="java -jar ~/Programs/RuneLite.jar"
 alias config="code ~/.zshrc"
-alias anem="~/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28"
+alias anem="~/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28 -qemu -m 2047 -enable-kvm"
 alias tms="tmux new-session \; \
   split-window -h \; \
 "
