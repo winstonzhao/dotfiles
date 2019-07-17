@@ -3,6 +3,12 @@ export PATH=$HOME/Development/flutter/bin:~/.npm-global/bin:$PATH
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$HOME/.local/bin
+export PATH=~/.npm-global/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -86,9 +92,10 @@ alias tms="tmux new-session \; \
   split-window -h \; \
 "
 alias gc="google-chrome"
-alias "do"="run_in_background"
-alias op="do nautilus ."
+alias "run"="run_in_background"
+alias op="run nautilus ."
 alias psave="sudo tlp start"
+alias postman="~/Development/postman/Postman"
 
 run_in_background() {
   eval "$@ &>/dev/null &disown";
@@ -142,3 +149,4 @@ github() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
