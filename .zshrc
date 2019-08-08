@@ -87,7 +87,9 @@ alias off="xset dpms force off"
 alias android-studio="~/Development/android-studio/bin/studio.sh"
 alias rs="java -jar ~/Programs/RuneLite.jar"
 alias config="code ~/.zshrc"
-alias anem="~/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28 -qemu -m 2047 -enable-kvm"
+alias zeves="bash /opt/Z/Z-Eves/system/z-eves-gui.sh"
+alias anem="run ~/Android/Sdk/emulator/emulator -avd Pixel_XL_API_28 -qemu -m 2047 -enable-kvm; sleep 5; ~/Android/Sdk/platform-tools/adb reverse tcp:7071 tcp:7071"
+
 alias tms="tmux new-session \; \
   split-window -h \; \
 "
